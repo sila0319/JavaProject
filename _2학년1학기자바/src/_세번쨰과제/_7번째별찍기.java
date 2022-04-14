@@ -30,9 +30,7 @@ public class _7번째별찍기 {
 			s-=1;
 			System.out.println("");
 		}
-	
-		}
-		
-		}
+	}		
+}
 
 

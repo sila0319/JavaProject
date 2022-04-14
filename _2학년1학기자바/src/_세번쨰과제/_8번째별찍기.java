@@ -11,10 +11,7 @@ public class _8번째별찍기 {
 			for (int j = 0; j < i; j++) {
 				System.out.print("*");
 			}
-			for (int j = 0; j < n-i; j++) {
-				System.out.print(" ");
-			}
-			for (int j = 0; j < n-i; j++) {
+			for (int j = 0; j < (n-i)*2; j++) {
 				System.out.print(" ");
 			}
 			for (int j = 0; j < i; j++) {
@@ -26,10 +23,7 @@ public class _8번째별찍기 {
 			for (int j = 0; j < n-i; j++) {
 				System.out.print("*");
 			}
-			for (int j = 0; j < i ; j++) {
-				System.out.print(" ");
-			}
-			for (int j = 0; j < i; j++) {
+			for (int j = 0; j < i*2 ; j++) {
 				System.out.print(" ");
 			}
 			for (int j = 0; j < n-i; j++) {
