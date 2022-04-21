@@ -1,40 +1,25 @@
-
-
 package Main;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Scanner;
 
+import java.util.Scanner;
 
 
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int k = sc.nextInt();
+		String [][] arr = new String[8][8];
 		int count =0;
-		int result =0;
-		Integer [] arr = new Integer[n];
 		
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] = sc.nextInt();
-		}
-		Arrays.sort(arr, Collections.reverseOrder());
-//		for (int i : arr) {
-//			System.out.println(i);
-//		}
-		while(true) {
-			count =0;
-			if(k==0) {
-				break;
-			}
-			for (int i = 0; i < arr.length; i++) {
-				if( k>=arr[i]) {
-					result += k/arr[i];
-					k %= arr[i];
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 8; j++) {
+				arr[i][j]= sc.next().split("");
+				if(i%2==0 && j%2==0 && arr[i][j].equals("F")) {
+					count++;
+				}else if(i%2!=0 && j%2!=0 && arr[i][j].equals("F")) {
+					count++;
 				}
 			}
-		System.out.println(result);
+		}
+		System.out.println(count);
+		
 	}
-}
 }
