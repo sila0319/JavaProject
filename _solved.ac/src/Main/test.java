@@ -1,30 +1,59 @@
 package Main;
+
 import java.util.Scanner;
 
-/*남학생의 경우
- * 
- * 스위치 번호가 남학생이 받은 번호의 배수이면 그 스위치의 상태를 바꾼다.
- * 3을 입력받으면 3번과 6번의 스위치 상태를 바꾼다.
- * 
- * 
- * 
- */
-
 public class test {
-	
-	static int eucd(int bn, int sn) {
-		int r = bn%sn;
-		if(r==0) {
-			return sn;
-		}else {
-			return eucd(sn,r);
-		}
-}
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int a = 12;
-		int b = 8;
-		int	N = eucd(Math.max(a, b), Math.min(a, b));
-		System.out.println(N);
+//	public static void spin (int n, int p, int[][]arr) { 
+//	int temp =0;
+//	if(p==1) {
+//		temp = arr[n][7];
+//		arr[n][7] = arr[n][6];
+//		arr[n][6] = arr[n][5];
+//		arr[n][5] = arr[n][4];
+//		arr[n][4] = arr[n][3];
+//		arr[n][3] = arr[n][2];
+//		arr[n][2] = arr[n][1];
+//		arr[n][1] = arr[n][0];
+//		arr[n][0] = temp;
+//	}else if(p==-1) {
+//		temp = arr[n][0];
+//		arr[n][0] = arr[n][1];
+//		arr[n][1] = arr[n][2];
+//		arr[n][2] = arr[n][3];
+//		arr[n][3] = arr[n][4];
+//		arr[n][4] = arr[n][5];
+//		arr[n][5] = arr[n][6];
+//		arr[n][6] = arr[n][7];
+//		arr[n][7] = temp;
+//	}
+//}
+
+public static void main(String[] args)  {
+Scanner sc = new Scanner(System.in);
+
+int [][] arr = new int[4][8];
+
+for (int i = 0; i < 4; i++) {
+	for (int j = 0; j < 8; j++) {
+		arr[i][j] = sc.nextInt();
 	}
 }
+int k = sc.nextInt();
+for (int i = 0; i < k; i++) {
+	int n = sc.nextInt();
+	int p = sc.nextInt();
+}
+//int n = 1;
+//int p = 1;
+//spin(n,p,arr);
+
+for (int i = 0; i < 4; i++) {
+	for (int j = 0; j < 8; j++) {
+		System.out.print(arr[i][j]+" ");
+	}
+	System.out.println();
+}
+
+
+
+}}

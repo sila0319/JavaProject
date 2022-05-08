@@ -1,32 +1,26 @@
 package Main;
 
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.Comparator;
+
 
 public class Main {
-	public static void main(String[] args)  {
-	Scanner sc = new Scanner(System.in);
-	int n = sc.nextInt();
-	int [] way = new int [n-1];
-	int [] city = new int [n]; 
-	int result =0;
-	int min =1000000001;
-	int where =0;
-	for (int i = 0; i < way.length; i++) {
-		way[i] = sc.nextInt();
-	}
-	for (int i = 0; i < city.length; i++) {
-		city[i]= sc.nextInt();
-		if(min > city[i]) {
-			min =city[i];
-			where =i;
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();//테스트 케이스
+		int result;
+		
+		for (int i = 0; i < t; i++) {
+			int k =sc.nextInt(); //k층
+			int n = sc.nextInt(); // n 호
+			result =0;
+			for (int j = 0; j < k; j++) {
+				for (int j2 = 0; j2 < n; j2++) {
+					result += 
+					
+				}
+			}
 		}
-	}
-	
-	
-	
+		
 	
 	}
 }
-
