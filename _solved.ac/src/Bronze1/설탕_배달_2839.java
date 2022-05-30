@@ -35,10 +35,9 @@ import java.util.Scanner;
 						//어떤 방법이 더작은지에 대해 비교가능하다.
 						min = result;
 					}
-				}
-					
-				}
+				}	
 			}
+		}
 		if(min==1700) {//min이 1700이라는 뜻은 모든 case에 대해서 나누어 떨어지지 않는다는걸의미한다.
 			System.out.println(-1);
 		}else {//min의 값이 변동이 되었다면 한번이라도 나누어 떨어졌다는 뜻이므로 min값을 말한다.

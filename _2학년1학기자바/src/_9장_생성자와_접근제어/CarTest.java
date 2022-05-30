@@ -4,6 +4,7 @@ class Car{
 	private String color;
 	private int speed;
 	private int gear;
+	int name = 1;
 	
 	public Car(String c , int s, int g) {
 		color = c;
@@ -18,10 +19,10 @@ class Car{
 		System.out.println(color + " "+gear + " " + speed);
 	}
 }
+
 public class CarTest {
 	public static void main(String[] args) {
 		Car c1 = new Car("blue", 100 , 0);
 		Car c2 = new Car();
-		
 	}
 }

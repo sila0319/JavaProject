@@ -25,9 +25,11 @@ class SportsCar extends Car1{
 	}
 }
 
-public class CarTest1 {
+public class CarTest1  {
 	public static void main(String[] args) {
 		SportsCar c = new SportsCar();
+	
+		
 		c.color ="red";
 		c.speedUp(100);
 		c.speedDown(10);

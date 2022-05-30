@@ -1,6 +1,5 @@
 package Silver5;
 
-
 	import java.util.Scanner;
 
 	public class д╥гн_4796 {
