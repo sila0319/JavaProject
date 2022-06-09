@@ -17,7 +17,7 @@ public class Ω∫≈√_10828 {
 		Stack<Integer> s = new Stack<Integer>();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
+		
 		int n = Integer.parseInt(br.readLine());
 		String command;
 		int pushNum;
